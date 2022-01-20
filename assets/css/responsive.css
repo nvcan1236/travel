@@ -72,6 +72,14 @@
     .banner1 {
         flex-wrap: wrap;
     }
+    .contact-input__text,
+    .contact-input__submit {
+        width: 100%;
+    }
+    .contact-input__submit {
+        margin-top: 10px;
+    }
+
     .item__list {
         padding-left: 48px;
     }
