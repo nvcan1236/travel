@@ -22,37 +22,6 @@ html {
 .hidden {
     display: none;
 }
-/* grid */
-.grid {
-    padding: 0;
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-}
-
-.grid.wide {
-    max-width: 1200px;
-}
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -8px;
-    margin-left: -8px;
-}
-.col {
-    padding: 0 8px;
-    /* box-sizing: content-box; */
-}
-.col.col-4 {
-    flex: 0 0 33.3333%;
-    max-width: 33.3333%;
-}
-.col.col-8 {
-    flex: 0 0 66.6667%;
-    max-width: 66.6667%;
-}
-
-
 /* animation */
 @keyframes fade-in {
     from {
