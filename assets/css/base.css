@@ -1,0 +1,210 @@
+:root {
+    --heading-text-color:#555555;
+    --text-color:#9a9a9a;
+    --main-blue:#14b9d5;
+    --main-violet:#ba71da;
+    --main-green:#1bbc9b;
+    --main-red:#f76570;
+    --main-yellow: #ffd205;
+    --main-white: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+.hidden {
+    display: none;
+}
+/* grid */
+.grid {
+    padding: 0;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.grid.wide {
+    max-width: 1200px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -8px;
+    margin-left: -8px;
+}
+.col {
+    padding: 0 8px;
+    /* box-sizing: content-box; */
+}
+.col.col-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+}
+.col.col-8 {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+}
+
+
+/* animation */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* title */
+.sm-title {
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.title {
+    color: var(--heading-text-color);
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+
+/* color */
+.green-text {
+    color: var(--main-green);
+}
+.white-text {
+    color: var(--main-white);
+}
+.red-text {
+    color: var(--main-red);
+}
+.violet-text {
+    color: var(--main-violet);
+}
+.green-bg {
+    background-color: var(--main-green);
+}
+.red-bg {
+    background-color: var(--main-red);
+}
+.yellow-bg {
+    background-color: var(--main-yellow);
+}
+.violet-bg {
+    background-color: var(--main-violet);
+}
+
+/* button */
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 15px 35px;
+    font-size: 1.4rem;
+    border-radius: 25px;
+    letter-spacing: 2px;
+}
+.sm-btn {
+    padding: 5px 20px;
+}
+
+
+/* tag  */
+.tag {
+    display: inline-block;
+    letter-spacing: 1px;
+    padding: 1px 6px;
+    font-size: 1rem;
+    border-radius: 2px;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.tag.red {
+    background-color: var(--main-red);
+}
+
+.tag.blue {
+    background-color: var(--main-blue);
+}
+
+.tag.green {
+    background-color: var(--main-green);
+}
+.tag.yellow {
+    background-color: var(--main-yellow);
+}
+
+/* icon */
+.icon {
+    display: inline-block;
+    cursor: pointer;
+}
+.sq14px {
+    width: 14px;
+    height: 14px;
+}
+.sq22px {
+    width: 22px;
+    height: 22px;
+}
+.sq25px {
+    width: 25px;
+    height: 25px;
+}
+.sq40px {
+    width: 40px;
+    height: 40px;
+}
+.sq50px {
+    width: 50px;
+    height: 50px;
+}
+/* underline */
+.underline {
+    text-decoration: none;
+    position: relative;
+}
+.underline::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    bottom: 11px;
+    z-index: -1;
+    position: absolute;
+}
+
+.underline.violet::after {
+    background-color: var(--main-violet);
+}
+.underline.green::after {
+    background-color: var(--main-green);
+}
+.underline.red::after {
+    background-color: var(--main-red);
+}
+.underline.blue::after {
+    background-color: var(--main-blue);
+}
