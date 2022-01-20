@@ -7,7 +7,9 @@
     .sm-title {
 
     }
-
+    .wide {
+        width: 100%;
+    }
     .header__navbar {
         display: none;
     }
