@@ -22,8 +22,11 @@ html {
 .hidden {
     display: none;
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> f85997225386c220643e6de6ed0fc92e40756977
 /* animation */
 @keyframes fade-in {
     from {
