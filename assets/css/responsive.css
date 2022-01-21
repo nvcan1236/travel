@@ -7,7 +7,9 @@
     .sm-title {
 
     }
-
+    .wide {
+        width: 100%;
+    }
     .header__navbar {
         display: none;
     }
@@ -75,6 +77,9 @@
     .contact-input__text,
     .contact-input__submit {
         width: 100%;
+    }
+    .contact-input__text {
+        margin-right: 0;
     }
     .contact-input__submit {
         margin-top: 10px;

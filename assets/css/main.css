@@ -4,6 +4,7 @@ body {
 
 .app {
   position: relative;
+  overflow: hidden;
 }
 
 .header {
@@ -645,7 +646,8 @@ body {
 }
 
 .contact-input__text {
-    
+    flex: 1;
+    margin-right: 30px;
 }
 .contact-input__submit {
   align-self: center;
